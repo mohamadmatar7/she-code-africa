@@ -1,0 +1,849 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-800 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/open-sans-v34-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/open-sans-v34-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Otomanopee One";
+  src: url("../fonts/otomanopee-one-regular.woff2") format("woff2"),
+    url("../fonts/otomanopee-one-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-03BC;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+header .headerwrap {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  padding: 1.8rem;
+  padding-left: 3rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: 0.25rem solid hsl(0deg 0% 95%);
+}
+
+.headerwrap img {
+  width: 3rem;
+  transition: 0.4s ease;
+}
+
+.headerwrap img:hover {
+  opacity: 60%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+nav ul a {
+  font-family: "Otomanopee One";
+  font-weight: bold;
+  color: hsl(0, 0%, 0%);
+  margin-right: 1.25rem;
+  text-decoration: none;
+  padding-right: 1.7rem;
+  transition: 0.5s ease;
+  font-size: 1.3rem;
+}
+
+nav ul li:hover a {
+  color: hsl(327, 95%, 37%);
+  text-decoration: underline;
+  text-underline-offset: 2.4rem;
+  text-decoration-thickness: 0.2rem;
+  opacity: 90%;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.main {
+  padding-top: 11rem;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+}
+
+.main-text {
+  padding: 0rem 2rem 0rem 5rem;
+  text-align: initial;
+}
+
+.main h1 {
+  font-family: "Otomanopee One";
+  color: hsl(0, 0%, 0%);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.main h1 span {
+  color: hsl(326, 95%, 22%);
+}
+
+.main-image {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  min-width: 31rem;
+  padding-left: 2rem;
+}
+
+.main-text p {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.btn {
+  width: 9rem;
+  padding: 0.6rem 1.1rem;
+  position: relative;
+  background-color: hsl(240, 93%, 60%);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  transition: 400ms;
+  justify-content: space-around;
+}
+
+.btn:hover {
+  background-color: hsl(240, 95%, 30%);
+  width: 10rem;
+  padding-right: 1rem;
+}
+
+.btn .fa-solid {
+  position: absolute;
+  top: 28%;
+  margin-left: 0.4rem;
+  color: white;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn:hover .fa-solid {
+  opacity: 1;
+  transform: translateX(0);
+  margin-left: 1rem;
+}
+
+.btn a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.support-line {
+  color: hsl(327deg 95% 37%);
+  text-decoration: underline;
+  text-underline-offset: 2.4rem;
+  text-decoration-thickness: 0.2rem;
+}
+
+.about-line {
+  color: hsl(327deg 95% 37%);
+  text-decoration: underline;
+  text-underline-offset: 2.4rem;
+  text-decoration-thickness: 0.2rem;
+}
+
+.support {
+  background-color: hsl(0, 13%, 91%);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tittle {
+  display: flex;
+  justify-content: start;
+  color: hsl(0, 0%, 1%);
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  padding-left: 12rem;
+}
+
+.card {
+  width: 24%;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card-information {
+  padding: 1rem 1.5rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.flag {
+  min-width: 2.1rem;
+  width: 2.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  padding-left: 0.8rem;
+  text-decoration: underline;
+}
+
+.number {
+  color: hsl(0, 1%, 64%);
+}
+
+.loader {
+  width: 100%;
+  background-color: hsl(0, 8%, 90%);
+  height: 4px;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+}
+
+.lider {
+  width: 19%;
+  background-color: hsl(240, 100%, 50%);
+  height: 4px;
+  border-radius: 5px;
+}
+
+.lider--1 {
+  width: 35%;
+  background-color: hsl(240, 100%, 50%);
+  height: 4px;
+  border-radius: 5px;
+}
+
+.lider--2 {
+  width: 90%;
+  background-color: hsl(240, 100%, 50%);
+  height: 4px;
+  border-radius: 5px;
+}
+
+p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+p span:hover {
+  opacity: 60%;
+}
+
+footer {
+  background-color: hsl(0, 1%, 19%);
+  padding: 3rem 8rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+.footer-logo {
+  position: relative;
+}
+.footer-logo img {
+  width: 100%;
+  min-width: 18.75rem;
+}
+
+.box {
+  background-color: hsl(326, 95%, 37%);
+  height: 2.5rem;
+  width: 11rem;
+  transform: rotate(51deg);
+  position: absolute;
+  bottom: 69%;
+  left: 8%;
+  border-radius: 3px;
+}
+
+.about {
+  padding-top: 10rem;
+}
+
+.text-logo {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.text-about h2 {
+  font-family: "Otomanopee One";
+  font-weight: bold;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.text-about h2 span {
+  color: hsl(326, 95%, 22%);
+}
+
+.text-about a {
+  color: hsl(0, 0%, 0%);
+  transform: 0.3s ease;
+}
+
+.text-about a:hover {
+  opacity: 50%;
+}
+
+.about-image {
+  margin: 1rem 0rem;
+}
+.about-list {
+  padding: 2rem 4rem;
+}
+
+.teams {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.team {
+  display: flex;
+  padding: 1.7rem;
+  width: 40%;
+}
+
+.text-team {
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+}
+
+.team img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: solid hsl(0, 0%, 100%) 4px;
+  outline: solid 4px hsl(18, 100%, 42%);
+}
+
+.support-us {
+  padding-top: 10rem;
+}
+
+.text-support {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: start;
+}
+
+.sca {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: -1px -1px 0 hsl(0, 4%, 84%), -2px -2px 0 hsl(0, 0%, 58%),
+    -1px 1px 0 hsl(0, 2%, 67%);
+  border-radius: 55%;
+  width: 5rem;
+  height: 4.5rem;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  float: left;
+  background-color: hsl(0, 0%, 100%);
+  margin-right: 3.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+  left: 0.9rem;
+  bottom: 1.2rem;
+}
+
+.triangle img {
+  animation: triangle 6s linear infinite;
+  position: absolute;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4;
+  width: 6.9rem;
+}
+
+@keyframes triangle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rule {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.line {
+  height: 10rem;
+  width: 0.3rem;
+  background-color: hsl(326, 95%, 22%);
+}
+
+q {
+  font-family: "Otomanopee One";
+  font-weight: bold;
+
+  font-size: 2.5rem;
+  color: hsl(0deg 0% 47%);
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 3rem;
+}
+
+.end {
+  color: hsl(326, 69%, 28%);
+}
+
+.gradient {
+  height: 1.2rem;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    hsl(249, 48%, 54%),
+    hsl(301, 43%, 48%),
+    hsl(24, 67%, 67%)
+  );
+  margin-bottom: 5rem;
+}
+
+.video {
+  display: flex;
+  padding: 0rem 4rem 5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 700px) and (min-width: 200px) {
+  header .headerwrap {
+    padding: 0 auto;
+  }
+  .headerwrap img {
+    margin-left: 0rem;
+    position: inherit;
+  }
+  .headerwrap {
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+  nav ul a {
+    margin-right: 0rem;
+    text-decoration: none;
+    padding-right: 0rem;
+    font-size: 1rem;
+  }
+  nav li {
+    padding-top: 1rem;
+    margin-right: 2rem;
+  }
+  nav ul li:hover a {
+    text-decoration: none;
+    opacity: 95%;
+  }
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .main {
+    padding-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .main-text {
+    padding: 1rem;
+    text-align: initial;
+  }
+
+  .main h1 {
+    font-size: 2rem;
+  }
+
+  .main-image {
+    width: 100%;
+    min-width: 15rem;
+    padding-left: 0rem;
+  }
+
+  .main-text p {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .btn a {
+    font-size: 1.2rem;
+  }
+
+  .support-line {
+    color: hsl(327deg 95% 37%);
+    text-decoration: none;
+    text-decoration-thickness: 0.2rem;
+  }
+
+  .about-line {
+    color: hsl(327deg 95% 37%);
+    text-decoration: none;
+    text-underline-offset: none;
+    text-decoration-thickness: 0.2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .tittle {
+    display: flex;
+    justify-content: start;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0.5rem 0rem;
+  }
+
+  .card-information {
+    padding: 1rem 1.5rem;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.5rem;
+  }
+
+  .flag {
+    min-width: 2.1rem;
+    width: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    padding-left: 0.8rem;
+    text-decoration: underline;
+  }
+  .footer-logo {
+    position: relative;
+  }
+  .footer-logo img {
+    width: 100%;
+    min-width: 12rem;
+  }
+
+  .box {
+    height: 1.7rem;
+    width: 6.7rem;
+
+    position: absolute;
+    bottom: 69%;
+    left: 8%;
+  }
+
+  .text-logo {
+    font-size: 1.1rem;
+  }
+
+  .about {
+    padding-top: 15rem;
+  }
+
+  .about-list {
+    padding: 1rem 2rem;
+  }
+
+  .text-about h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .teams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.7rem 0rem;
+    width: 15rem;
+  }
+
+  .text-team {
+    padding-left: 0rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .team img {
+    margin-left: 4.7rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .support-us {
+    padding-top: 15rem;
+  }
+
+  .text-support {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: start;
+    padding-top: 8rem;
+  }
+
+  .text-support p {
+    word-break: break-word;
+  }
+
+  .sca {
+    left: 5.9rem;
+    bottom: 1.2rem;
+  }
+
+  .triangle img {
+    animation: triangle 6s linear infinite;
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    width: 5.2rem;
+    left: 6.2rem;
+  }
+  .rule {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .line {
+    max-height: 15rem;
+  }
+
+  q {
+    font-size: 2rem;
+  }
+
+  .gradient {
+    height: 1.2rem;
+  }
+
+  .video {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 700.1px) {
+  header .headerwrap {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.7rem;
+  }
+
+  .headerwrap img {
+    position: absolute;
+    top: 15.1%;
+    left: 45%;
+  }
+
+  .headerwrap img:hover {
+    opacity: 60%;
+  }
+
+  nav ul a {
+    margin-right: 2.2rem;
+    margin-left: 2.2rem;
+    font-size: 1.2rem;
+  }
+
+  nav ul li:hover a {
+    color: hsl(328, 90%, 74%);
+    text-decoration: underline;
+    text-underline-offset: 1.9rem;
+    text-decoration-thickness: 0.2rem;
+    opacity: 80%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .main {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .support-line {
+    color: hsl(327deg 95% 37%);
+    text-decoration: none;
+    text-decoration-thickness: 0.2rem;
+  }
+
+  .about-line {
+    color: hsl(327deg 95% 37%);
+    text-decoration: none;
+    text-underline-offset: none;
+    text-decoration-thickness: 0.2rem;
+  }
+
+  .card {
+    min-width: 45%;
+    flex: auto;
+  }
+
+  .tittle {
+    padding-left: 2rem;
+  }
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .teams {
+    display: flex;
+  }
+
+  .team {
+    display: block;
+    padding: 1.7rem 0rem;
+    min-width: 40%;
+  }
+
+  .text-team {
+    padding-left: 0rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .team img {
+    margin-left: 6.4rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .video {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  header .headerwrap {
+    justify-content: space-between;
+  }
+  .tittle {
+    padding-left: 2rem;
+  }
+
+  .card {
+    width: 31%;
+  }
+
+  .teams {
+    justify-content: start;
+    text-align: center;
+  }
+
+  .team {
+    display: block;
+  }
+
+  .team img {
+    margin-left: 7rem;
+  }
+
+  .video {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
